@@ -28,7 +28,7 @@ const Footer = () => {
 	return (
     	<footer className='flexStart footer'>
 			<div className='flex flex-col gap-12 w-full'>
-				<div className='flex items-start flex-col'>
+				<div className='flex items-center flex-col'>
 					<Image 
 						src="/logo.png"
 						width={200}
@@ -36,12 +36,12 @@ const Footer = () => {
 						alt='Logo'
 					/>
 
-					<p className='text-start text-sm font-normal mt-5 max-w-xs'>
-						"Fatin Iftekhar is a cybersecurity professional".
+					<p className='text-start text-sm font-normal mt-5 max-w-xs place-items-center'>
+						Thanks for visiting my personal website!
 					</p>
 				</div>
 
-				<div className='flex flex-wrap gap-12'>
+				{/* <div className='flex flex-wrap gap-12'>
 					<FooterColumn 
 						title={footerLinks[0].title}
 						links={footerLinks[0].links}	
@@ -81,12 +81,12 @@ const Footer = () => {
 						links={footerLinks[6].links}	
 					/>
 
-				</div>
+				</div> */}
 			</div>
 
 			<div className='flexBetween footer_copyright'>
 				<p>Created by Fatin Iftekhar @ July 2023</p>
-				<p className='text-gray'>
+				<p className='text-gray place-items-end'>
 					<span className='text-black font-semibold'>
 						MAKE THIS DYNAMIC	     
 					</span> visitors since launch

@@ -2,7 +2,7 @@ import { getServerSession } from "next-auth";
 import { NextAuthOptions, User } from "next-auth";
 import { AdapterUser } from 'next-auth/adapters';
 import GoogleProvider from 'next-auth/providers/google'
-import LinkedInProvider from 'next-auth/providers/linkedin';
+
 import jsonwebtoken from 'jsonwebtoken';
 import { JWT } from 'next-auth/jwt';
 import { SessionInterface } from "@/common.types";
@@ -13,10 +13,7 @@ export const authOptions: NextAuthOptions = {
             clientId: process.env.GOOGLE_CLIENT_ID!,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET!
         }),
-        LinkedInProvider({
-            clientId: '', // process.env.LINKEDIN_CLIENT_ID
-            clientSecret: '' // process.env.LINKEDIN_CLIENT_SECRET
-        })
+
     ],
     // jwt: {
     //     encode: ({ secret, token }) => {
